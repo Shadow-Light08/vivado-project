@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="RAM_D_synth_1" LaunchPart="xc7a100tfgg484-2L" LaunchTime="1719129946">
+  <File Type="PA-TCL" Name="RAM_D.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="RAM_D_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="RAM_D_reports.tcl"/>
+  <File Type="RDS-RDS" Name="RAM_D.vds"/>
+  <File Type="RDS-UTIL" Name="RAM_D_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="RAM_D_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="RAM_D.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="RAM_D_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="RAM_D_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RAM_D">
+    <File Path="$PSRCDIR/sources_1/ip/RAM_D/RAM_D.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="RAM_D"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RAM_D">
+    <File Path="$PSRCDIR/sources_1/ip/RAM_D/RAM_D.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="RAM_D"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

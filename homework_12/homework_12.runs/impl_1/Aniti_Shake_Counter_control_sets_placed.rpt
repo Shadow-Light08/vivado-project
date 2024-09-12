@@ -1,0 +1,86 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jan  3 11:51:19 2024
+| Host         : Shadow-Light running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Aniti_Shake_Counter_control_sets_placed.rpt
+| Design       : Aniti_Shake_Counter
+| Device       : xc7a100t
+------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    19 |
+| Unused register locations in slices containing registers |   119 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           15 |
+|      2 |            1 |
+|      8 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | Yes                    |              14 |            8 |
+| No           | Yes                   | No                     |               4 |            4 |
+| Yes          | No                    | No                     |              20 |            5 |
+| Yes          | No                    | Yes                    |              25 |           10 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+---------------------+-------------------------+------------------+----------------+
+|       Clock Signal       |    Enable Signal    |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
++--------------------------+---------------------+-------------------------+------------------+----------------+
+|  T1/out                  |                     |                         |                1 |              1 |
+|  T1/out                  |                     | T2/Q_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  T1/out                  |                     | T2/Q_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  T1/out                  |                     | T2/Q_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  T1/out                  |                     | T2/Q_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  T1/out                  | T2/Q[3]_P_i_1_n_0   | T2/Q_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  T1/out                  | T2/Q[3]_P_i_1_n_0   | T2/Q_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  T1/out                  | T2/Q[3]_P_i_1_n_0   | T2/Q_reg[3]_LDC_i_1_n_0 |                1 |              1 |
+|  T1/out                  | T2/Q[3]_P_i_1_n_0   | T2/Q_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  T2/Q_reg[0]_LDC_i_1_n_0 |                     | T2/Q_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  T2/Q_reg[1]_LDC_i_1_n_0 |                     | T2/Q_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  T2/Q_reg[3]_LDC_i_1_n_0 |                     | T2/Q_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  T2/Q_reg[2]_LDC_i_1_n_0 |                     | T2/Q_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  L2H_F1_reg_i_2_n_0      |                     |                         |                1 |              1 |
+|  L2H_F1_reg_i_2_n_0      | T1/p_3_in           | CLR_IBUF                |                1 |              1 |
+|  L2H_F1_reg_i_2_n_0      |                     | CLR_IBUF                |                1 |              2 |
+|  CLK_IBUF_BUFG           |                     | reset_IBUF              |                3 |              8 |
+|  L2H_F1_reg_i_2_n_0      | T1/debounce_counter |                         |                5 |             20 |
+|  L2H_F1_reg_i_2_n_0      | T1/sel              | CLR_IBUF                |                5 |             20 |
++--------------------------+---------------------+-------------------------+------------------+----------------+
+
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Nov 24 11:17:12 2023
+# Process ID: 37964
+# Current directory: D:/Documents/Project/homework_1/homework_1.runs/synth_1
+# Command line: vivado.exe -log FourBitFA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FourBitFA.tcl
+# Log file: D:/Documents/Project/homework_1/homework_1.runs/synth_1/FourBitFA.vds
+# Journal file: D:/Documents/Project/homework_1/homework_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FourBitFA.tcl -notrace

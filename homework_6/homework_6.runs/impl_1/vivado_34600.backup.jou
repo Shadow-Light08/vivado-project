@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec 20 11:18:56 2023
+# Process ID: 34600
+# Current directory: D:/Documents/Project/homework_6/homework_6.runs/impl_1
+# Command line: vivado.exe -log J_K_74LS76.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source J_K_74LS76.tcl -notrace
+# Log file: D:/Documents/Project/homework_6/homework_6.runs/impl_1/J_K_74LS76.vdi
+# Journal file: D:/Documents/Project/homework_6/homework_6.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source J_K_74LS76.tcl -notrace

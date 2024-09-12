@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jun 23 15:44:38 2024
+# Process ID: 18832
+# Current directory: D:/Desktop/10_final/10_final/10_final.runs/RAM_I_synth_1
+# Command line: vivado.exe -log RAM_I.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RAM_I.tcl
+# Log file: D:/Desktop/10_final/10_final/10_final.runs/RAM_I_synth_1/RAM_I.vds
+# Journal file: D:/Desktop/10_final/10_final/10_final.runs/RAM_I_synth_1\vivado.jou
+#-----------------------------------------------------------
+source RAM_I.tcl -notrace

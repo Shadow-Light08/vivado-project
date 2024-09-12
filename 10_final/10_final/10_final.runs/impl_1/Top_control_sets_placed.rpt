@@ -1,0 +1,112 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Jun 23 15:55:15 2024
+| Host         : Shadow-Light running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    43 |
+| Unused register locations in slices containing registers |    30 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      3 |            3 |
+|      4 |            1 |
+|      5 |            1 |
+|      8 |            1 |
+|     15 |            1 |
+|    16+ |           36 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             120 |           53 |
+| No           | No                    | Yes                    |               8 |            5 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1106 |          532 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+--------------------------+------------------+------------------+----------------+
+|          Clock Signal          |       Enable Signal      | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------------------+--------------------------+------------------+------------------+----------------+
+|  uut1/inst_Type_reg[2]_i_2_n_2 |                          |                  |                1 |              3 |
+|  uut3/IR_reg[6]                |                          |                  |                1 |              3 |
+| ~clk_nt_IBUF_BUFG              |                          |                  |                1 |              3 |
+|  clk_IBUF_BUFG                 | uut3/PC_write_i_1_n_2    | rst_n_IBUF       |                2 |              4 |
+|  clk_IBUF_BUFG                 | uut3/rs2_imm_s_i_1_n_2   | rst_n_IBUF       |                3 |              5 |
+|  clk_IBUF_BUFG                 |                          | rst_n_IBUF       |                5 |              8 |
+|  clk_nt_IBUF_BUFG              |                          |                  |                4 |             15 |
+|  n_0_0_BUFG                    |                          |                  |               13 |             32 |
+|  n_1_1360_BUFG                 |                          |                  |               18 |             32 |
+| ~clk_IBUF_BUFG                 |                          |                  |               15 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/E[0]                | rst_n_IBUF       |               16 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_2[0]  | rst_n_IBUF       |               13 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_20[0] | rst_n_IBUF       |               23 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_25[0] | rst_n_IBUF       |               15 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_26[0] | rst_n_IBUF       |               12 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_29[0] | rst_n_IBUF       |               22 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_22[0] | rst_n_IBUF       |               14 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_24[0] | rst_n_IBUF       |               14 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_21[0] | rst_n_IBUF       |               20 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_3[0]  | rst_n_IBUF       |               17 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_5[0]  | rst_n_IBUF       |               25 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_9[0]  | rst_n_IBUF       |               16 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_19[0] | rst_n_IBUF       |               15 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_16[0] | rst_n_IBUF       |               12 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_6[0]  | rst_n_IBUF       |               18 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_27[0] | rst_n_IBUF       |               16 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_0[0]  | rst_n_IBUF       |               10 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_10[0] | rst_n_IBUF       |               15 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_18[0] | rst_n_IBUF       |               12 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_4[0]  | rst_n_IBUF       |               20 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_14[0] | rst_n_IBUF       |               15 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_28[0] | rst_n_IBUF       |               18 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_13[0] | rst_n_IBUF       |               19 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_8[0]  | rst_n_IBUF       |               14 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_7[0]  | rst_n_IBUF       |               24 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_23[0] | rst_n_IBUF       |               17 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_17[0] | rst_n_IBUF       |               11 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_1[0]  | rst_n_IBUF       |               10 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_12[0] | rst_n_IBUF       |               15 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_11[0] | rst_n_IBUF       |               17 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/Reg_write_reg_15[0] | rst_n_IBUF       |               11 |             32 |
+| ~clk_IBUF_BUFG                 | uut3/PC_write            | rst_n_IBUF       |               13 |             33 |
+| ~clk_IBUF_BUFG                 | uut3/IR_write            | rst_n_IBUF       |               18 |             72 |
++--------------------------------+--------------------------+------------------+------------------+----------------+
+
+

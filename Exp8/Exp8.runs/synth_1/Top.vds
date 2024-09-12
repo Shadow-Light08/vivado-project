@@ -1,0 +1,817 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jun 17 23:53:15 2024
+# Process ID: 22016
+# Current directory: D:/Documents/Project/Exp8/Exp8.runs/synth_1
+# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: D:/Documents/Project/Exp8/Exp8.runs/synth_1/Top.vds
+# Journal file: D:/Documents/Project/Exp8/Exp8.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a100tfgg484-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14088 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 468.094 ; gain = 101.039
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/Top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IF_DE' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'adder' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (1#1) [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC0' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC0.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PC0' (2#1) [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC0.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC_select' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PC_select' (3#1) [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pc_reg' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/pc_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pc_reg' (4#1) [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/pc_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IM' [D:/Documents/Project/Exp8/Exp8.runs/synth_1/.Xil/Vivado-22016-Shadow-Light/realtime/IM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IM' (5#1) [D:/Documents/Project/Exp8/Exp8.runs/synth_1/.Xil/Vivado-22016-Shadow-Light/realtime/IM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IR' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/IR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (6#1) [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/IR.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ID1' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/ID1.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/ID1.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'ID1' (7#1) [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/ID1.v:3]
+WARNING: [Synth 8-3848] Net origin_pc in module/entity IF_DE does not have driver. [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'IF_DE' (8#1) [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:3]
+WARNING: [Synth 8-350] instance 'decoder' of module 'IF_DE' requires 15 connections, but only 12 given [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+INFO: [Synth 8-6157] synthesizing module 'id2' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/id2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'id2' (9#1) [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/id2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'register_heap' [D:/Documents/Project/Exp4/Exp4.srcs/sources_1/new/register_heap.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'register_heap' (10#1) [D:/Documents/Project/Exp4/Exp4.srcs/sources_1/new/register_heap.v:3]
+INFO: [Synth 8-6157] synthesizing module 'register_32' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/register_32.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'register_32' (11#1) [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/register_32.v:3]
+INFO: [Synth 8-6157] synthesizing module 'rs2_Imm_Select' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/rs2_imm_select.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'rs2_Imm_Select' (12#1) [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/rs2_imm_select.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Documents/Project/Exp3/Exp3.srcs/sources_1/new/ALU.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/Project/Exp3/Exp3.srcs/sources_1/new/ALU.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (13#1) [D:/Documents/Project/Exp3/Exp3.srcs/sources_1/new/ALU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'RAM_Data' [D:/Documents/Project/Exp8/Exp8.runs/synth_1/.Xil/Vivado-22016-Shadow-Light/realtime/RAM_Data_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_Data' (14#1) [D:/Documents/Project/Exp8/Exp8.runs/synth_1/.Xil/Vivado-22016-Shadow-Light/realtime/RAM_Data_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'W_Data_Select' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/w_data_select.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'W_Data_Select' (15#1) [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/w_data_select.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CU' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/cu.v:3]
+	Parameter Idle bound to: 5'b00000 
+	Parameter S1 bound to: 5'b00001 
+	Parameter S2 bound to: 5'b00010 
+	Parameter S3 bound to: 5'b00011 
+	Parameter S4 bound to: 5'b00100 
+	Parameter S5 bound to: 5'b00101 
+	Parameter S6 bound to: 5'b00110 
+	Parameter S7 bound to: 5'b00111 
+	Parameter S8 bound to: 5'b01000 
+	Parameter S9 bound to: 5'b01001 
+	Parameter S10 bound to: 5'b01010 
+	Parameter S11 bound to: 5'b01011 
+	Parameter S12 bound to: 5'b01100 
+	Parameter S13 bound to: 5'b01101 
+	Parameter S14 bound to: 5'b01110 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/cu.v:91]
+WARNING: [Synth 8-5788] Register ALU_OP_o_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/cu.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (16#1) [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/cu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (17#1) [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/Top.v:36]
+INFO: [Synth 8-6157] synthesizing module 'Display' [D:/Documents/Project/Board_Test/Board_Test/Board_Test.srcs/sources_1/new/Display.v:3]
+WARNING: [Synth 8-3848] Net enable in module/entity Display does not have driver. [D:/Documents/Project/Board_Test/Board_Test/Board_Test.srcs/sources_1/new/Display.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Display' (18#1) [D:/Documents/Project/Board_Test/Board_Test/Board_Test.srcs/sources_1/new/Display.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (19#1) [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/Top.v:3]
+WARNING: [Synth 8-3331] design Display has unconnected port enable
+WARNING: [Synth 8-3331] design id2 has unconnected port funct7[6]
+WARNING: [Synth 8-3331] design id2 has unconnected port funct7[4]
+WARNING: [Synth 8-3331] design id2 has unconnected port funct7[3]
+WARNING: [Synth 8-3331] design id2 has unconnected port funct7[2]
+WARNING: [Synth 8-3331] design id2 has unconnected port funct7[1]
+WARNING: [Synth 8-3331] design id2 has unconnected port funct7[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 524.730 ; gain = 157.676
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[31] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[30] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[29] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[28] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[27] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[26] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[25] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[24] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[23] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[22] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[21] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[20] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[19] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[18] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[17] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[16] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[15] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[14] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[13] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[12] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[11] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[10] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[9] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[8] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[7] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[6] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[5] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[4] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[3] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[2] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[1] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin PC_select_module:origin_pc[0] to constant 0 [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/exp7_top.v:51]
+WARNING: [Synth 8-3295] tying undriven pin decoder:PC0_Write to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:PC_s[1] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:PC_s[0] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[31] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[30] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[29] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[28] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[27] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[26] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[25] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[24] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[23] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[22] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[21] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[20] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[19] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[18] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[17] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[16] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[15] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[14] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[13] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[12] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[11] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[10] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[9] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[8] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[7] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[6] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[5] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[4] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[3] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[2] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[1] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+WARNING: [Synth 8-3295] tying undriven pin decoder:F[0] to constant 0 [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/CPU.v:29]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 524.730 ; gain = 157.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 524.730 ; gain = 157.676
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Documents/Project/Exp8/Exp8.srcs/sources_1/ip/RAM_Data/RAM_Data/RAM_Data_in_context.xdc] for cell 'cpu/RAM_Data'
+Finished Parsing XDC File [d:/Documents/Project/Exp8/Exp8.srcs/sources_1/ip/RAM_Data/RAM_Data/RAM_Data_in_context.xdc] for cell 'cpu/RAM_Data'
+Parsing XDC File [d:/Documents/Project/Exp8/Exp8.srcs/sources_1/ip/IM/IM/IM_in_context.xdc] for cell 'cpu/decoder/IM_B'
+Finished Parsing XDC File [d:/Documents/Project/Exp8/Exp8.srcs/sources_1/ip/IM/IM/IM_in_context.xdc] for cell 'cpu/decoder/IM_B'
+Parsing XDC File [D:/Documents/Project/Exp8/Exp8.srcs/constrs_1/new/Top.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_IBUF'. [D:/Documents/Project/Exp8/Exp8.srcs/constrs_1/new/Top.xdc:41]
+WARNING: [Vivado 12-507] No nets matched 'rst_n_IBUF'. [D:/Documents/Project/Exp8/Exp8.srcs/constrs_1/new/Top.xdc:42]
+Finished Parsing XDC File [D:/Documents/Project/Exp8/Exp8.srcs/constrs_1/new/Top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Documents/Project/Exp8/Exp8.srcs/constrs_1/new/Top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Documents/Project/Exp8/Exp8.srcs/constrs_1/new/Top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 876.125 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 876.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 876.125 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 876.125 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 876.125 ; gain = 509.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 876.125 ; gain = 509.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for cpu/RAM_Data. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cpu/decoder/IM_B. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 876.125 ; gain = 509.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "imm" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_IS_R" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_IS_IMM" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_Files_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "ZF0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'PC0_Write_reg' into 'IR_Write_reg' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/cu.v:88]
+INFO: [Synth 8-5546] ROM "PC_Write" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs2_imm_s" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "w_data_s" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "ALU_OP_o" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "PC_s" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PC_Write" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs2_imm_s" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "w_data_s" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "ALU_OP_o" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "PC_s" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Next_ST" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_ST" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_ST" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'imm_reg' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/ID1.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'flag_reg' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/ID1.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_ALU_OP_reg' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/id2.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_F_reg' [D:/Documents/Project/Exp3/Exp3.srcs/sources_1/new/ALU.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'C_reg' [D:/Documents/Project/Exp3/Exp3.srcs/sources_1/new/ALU.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_result_reg' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/w_data_select.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'Next_ST_reg' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/cu.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/Top.v:37]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 876.125 ; gain = 509.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 39    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	  10 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	  15 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	  15 Input      2 Bit        Muxes := 3     
+	   9 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	  10 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 55    
+	   5 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      1 Bit        Muxes := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module PC0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module PC_select 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module pc_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module IR 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module ID1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 2     
+Module IF_DE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module id2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+Module register_heap 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module register_32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module rs2_Imm_Select 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+Module W_Data_Select 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module CU 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+	  15 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	  15 Input      2 Bit        Muxes := 3     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	  15 Input      1 Bit        Muxes := 13    
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+Module Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "temp_IS_R" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_IS_IMM" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "ZF0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design id2 has unconnected port funct7[6]
+WARNING: [Synth 8-3331] design id2 has unconnected port funct7[4]
+WARNING: [Synth 8-3331] design id2 has unconnected port funct7[3]
+WARNING: [Synth 8-3331] design id2 has unconnected port funct7[2]
+WARNING: [Synth 8-3331] design id2 has unconnected port funct7[1]
+WARNING: [Synth 8-3331] design id2 has unconnected port funct7[0]
+WARNING: [Synth 8-3331] design Top has unconnected port enable
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/decoder/\pc0_module/temp_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/cu/\Next_ST_reg[4] )
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[31]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[30]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[29]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[28]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[27]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[26]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[25]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[24]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[23]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[22]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[21]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[20]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[19]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[18]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[17]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[16]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[15]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[14]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[13]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[12]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[11]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[10]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[9]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[8]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[7]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[6]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[5]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[4]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[3]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[2]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[1]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (temp_result_reg[0]) is unused and will be removed from module W_Data_Select.
+WARNING: [Synth 8-3332] Sequential element (Next_ST_reg[4]) is unused and will be removed from module CU.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 876.125 ; gain = 509.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 876.125 ; gain = 509.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 876.125 ; gain = 509.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/register_heap/REG_Files_reg[0][31] )
+WARNING: [Synth 8-3332] Sequential element (cpu/cu/ALU_OP_o_reg[3]_P) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (cpu/cu/ALU_OP_o_reg[2]_P) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (cpu/cu/ALU_OP_o_reg[1]_P) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (cpu/cu/ALU_OP_o_reg[0]_P) is unused and will be removed from module Top.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 905.168 ; gain = 538.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 905.168 ; gain = 538.113
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[4] with 1st driver pin 'cpu/decoder/addr_module/i_3_0/O[3]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[4] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[4]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[3] with 1st driver pin 'cpu/decoder/addr_module/i_3_0/O[2]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[3] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[3]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[2] with 1st driver pin 'cpu/decoder/addr_module/i_3_0/O[1]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[2] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[2]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[1] with 1st driver pin 'cpu/decoder/addr_module/i_3_0/O[0]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[1] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[1]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[8] with 1st driver pin 'cpu/decoder/addr_module/i_3_1/O[3]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[8] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[8]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[7] with 1st driver pin 'cpu/decoder/addr_module/i_3_1/O[2]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[7] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[7]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[6] with 1st driver pin 'cpu/decoder/addr_module/i_3_1/O[1]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[6] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[6]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[5] with 1st driver pin 'cpu/decoder/addr_module/i_3_1/O[0]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[5] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[5]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[12] with 1st driver pin 'cpu/decoder/addr_module/i_3_2/O[3]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[12] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[12]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[11] with 1st driver pin 'cpu/decoder/addr_module/i_3_2/O[2]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[11] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[11]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[10] with 1st driver pin 'cpu/decoder/addr_module/i_3_2/O[1]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[10] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[10]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[9] with 1st driver pin 'cpu/decoder/addr_module/i_3_2/O[0]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[9] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[9]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[16] with 1st driver pin 'cpu/decoder/addr_module/i_3_3/O[3]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[16] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[16]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[15] with 1st driver pin 'cpu/decoder/addr_module/i_3_3/O[2]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[15] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[15]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[14] with 1st driver pin 'cpu/decoder/addr_module/i_3_3/O[1]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[14] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[14]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[13] with 1st driver pin 'cpu/decoder/addr_module/i_3_3/O[0]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[13] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[13]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[20] with 1st driver pin 'cpu/decoder/addr_module/i_3_4/O[3]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[20] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[20]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[19] with 1st driver pin 'cpu/decoder/addr_module/i_3_4/O[2]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[19] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[19]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[18] with 1st driver pin 'cpu/decoder/addr_module/i_3_4/O[1]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[18] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[18]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[17] with 1st driver pin 'cpu/decoder/addr_module/i_3_4/O[0]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[17] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[17]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[24] with 1st driver pin 'cpu/decoder/addr_module/i_3_5/O[3]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[24] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[24]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[23] with 1st driver pin 'cpu/decoder/addr_module/i_3_5/O[2]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[23] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[23]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[22] with 1st driver pin 'cpu/decoder/addr_module/i_3_5/O[1]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[22] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[22]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[21] with 1st driver pin 'cpu/decoder/addr_module/i_3_5/O[0]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[21] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[21]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[28] with 1st driver pin 'cpu/decoder/addr_module/i_3_6/O[3]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[28] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[28]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[27] with 1st driver pin 'cpu/decoder/addr_module/i_3_6/O[2]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[27] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[27]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[26] with 1st driver pin 'cpu/decoder/addr_module/i_3_6/O[1]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[26] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[26]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[25] with 1st driver pin 'cpu/decoder/addr_module/i_3_6/O[0]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[25] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[25]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[31] with 1st driver pin 'cpu/decoder/addr_module/i_3_7/O[2]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[31] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[31]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[30] with 1st driver pin 'cpu/decoder/addr_module/i_3_7/O[1]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[30] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[30]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[29] with 1st driver pin 'cpu/decoder/addr_module/i_3_7/O[0]' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/adder.v:9]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin cpu/decoder/new_pc[29] with 2nd driver pin 'cpu/decoder/PC_select_module/temp_reg[29]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[0] with 1st driver pin 'cpu/decoder/PC_select_module/temp_reg[0]/Q' [D:/Documents/Project/Exp8/Exp8.srcs/sources_1/new/PC_select.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[0] with 2nd driver pin 'cpu/decoder/pc_module/pc_reg[0]/Q' [D:/Documents/Project/Exp7/Exp7.srcs/sources_1/new/pc_reg.v:15]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       32|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 905.168 ; gain = 538.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 905.168 ; gain = 538.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 905.168 ; gain = 538.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 905.168 ; gain = 538.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 905.168 ; gain = 538.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |RAM_Data      |         1|
+|2     |IM            |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |IM       |     1|
+|2     |RAM_Data |     1|
+|3     |BUFG     |     5|
+|4     |CARRY4   |    38|
+|5     |LUT1     |    13|
+|6     |LUT2     |    14|
+|7     |LUT3     |    39|
+|8     |LUT4     |   115|
+|9     |LUT5     |   152|
+|10    |LUT6     |  1045|
+|11    |MUXF7    |   260|
+|12    |FDCE     |  1155|
+|13    |FDRE     |    64|
+|14    |LD       |   137|
+|15    |IBUF     |     6|
+|16    |OBUF     |    15|
+|17    |OBUFT    |     1|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------------------+---------------+------+
+|      |Instance               |Module         |Cells |
++------+-----------------------+---------------+------+
+|1     |top                    |               |  3123|
+|2     |  cpu                  |CPU            |  3015|
+|3     |    alu                |ALU            |    43|
+|4     |    cu                 |CU             |   170|
+|5     |    decoder            |IF_DE          |   577|
+|6     |      PC_select_module |PC_select      |    32|
+|7     |      addr_module      |adder          |     9|
+|8     |      id1              |ID1            |   349|
+|9     |      ir               |IR             |   123|
+|10    |      pc_module        |pc_reg         |    32|
+|11    |    id2_1              |id2            |     8|
+|12    |    register_A         |register_32    |   182|
+|13    |    register_B         |register_32_0  |    42|
+|14    |    register_F         |register_32_1  |    33|
+|15    |    register_MDR       |register_32_2  |    32|
+|16    |    register_heap      |register_heap  |  1832|
+|17    |    rs2_imm_select     |rs2_Imm_Select |    32|
+|18    |    w_data_select      |W_Data_Select  |    32|
+|19    |  display              |Display        |    45|
++------+-----------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 905.168 ; gain = 538.113
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 64 critical warnings and 53 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 905.168 ; gain = 186.719
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 905.168 ; gain = 538.113
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 435 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 905.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 137 instances were transformed.
+  LD => LDCE: 137 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+176 Infos, 134 Warnings, 64 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 905.168 ; gain = 549.637
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 905.168 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/Project/Exp8/Exp8.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 17 23:53:42 2024...
